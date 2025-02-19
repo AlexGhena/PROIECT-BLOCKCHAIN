@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reputation DApp (ethers v6)</title>
+    <!-- IMPORTANT: UMD v6, nu alt link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/ethers@6.6.0/dist/ethers.umd.min.js"
+      type="application/javascript"
+    ></script>
+  </head>
+  <body>
+    <h1>Reputation DApp (ethers v6)</h1>
+
+    <button id="connectButton">Conecteaza MetaMask</button>
+    <div id="accountInfo"></div>
+    <div id="balanceInfo"></div>
+
+    <h2>Obtine reputatia unui freelancer</h2>
+    <input id="freelancerAddress" placeholder="Adresa freelancerului" />
+    <button id="getReputationButton">Afiseaza reputatia</button>
+    <div id="reputationResult"></div>
+
+    <h2>Ofera feedback</h2>
+    <input id="feedbackFreelancerAddress" placeholder="Adresa freelancerului" />
+    <input id="points" placeholder="Puncte" />
+    <input id="ethValue" placeholder="Valoare ETH (0.01 min.)" />
+    <button id="provideFeedbackButton">Trimite feedback</button>
+    <div id="feedbackResult"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
